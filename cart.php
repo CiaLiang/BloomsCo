@@ -1,13 +1,12 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <?php
 @session_start();
 include 'common_function.php'; // Include common functions
 // Call the functions
 remove_cart_item($con);
 update_cart_item($con);
 ?>
-
-<!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
     <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
