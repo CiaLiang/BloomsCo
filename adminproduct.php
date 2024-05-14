@@ -6,7 +6,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -15,7 +15,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
     <body>
         <?php
         include './adminheader.php';
-        include '../config/connect.php';
+        include 'config/connect.php';
 
         if (isset($_POST['insert_product'])) {
             //mysqli_real_escape_string to escape any special characters in the values before inserting them into the database.
