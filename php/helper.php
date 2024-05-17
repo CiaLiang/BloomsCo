@@ -1,12 +1,12 @@
 <?php
-// Establish a database connection
-$host = "localhost";
-$username = "root";
-$password = "";
-$db_name = "sneakervault";
+// Establish a database connection to AWS RDS
+$host = "bloomsco.cgas1ms7nugm.us-east-1.rds.amazonaws.com";
+$username = "blooms";
+$password = "bloomsCo123";
+$db_name = "bloomsCo";
 
 $con = mysqli_connect($host, $username, $password, $db_name);
-if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+if (!$con) {
+    die(mysqli_error($con));
 }
 ?>
