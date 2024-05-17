@@ -31,7 +31,7 @@ function update_cart_item($con) {
             $stmt->bind_param("ii", $quantity, $product_id);
             $stmt->execute();
             if ($stmt->affected_rows == 0) {
-                echo "Error updating cart";
+                echo "";
             }
         }
     }
